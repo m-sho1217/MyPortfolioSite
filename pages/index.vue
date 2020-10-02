@@ -94,20 +94,23 @@
       <div class="blog-catalog">
         <ul>
           <li>
-            <instagram-embed :url="'https://www.instagram.com/p/BvF_xt_gwp-/'"/>
+            <instagram-embed 
+              :url="'https://www.instagram.com/p/BvF_xt_gwp-/'"
+              :hide-caption="true"
+            />
           </li>
-          <li>コンテンツ</li>
-          <li>コンテンツ</li>
-        </ul>
-        <ul>
-          <li>コンテンツ</li>
-          <li>コンテンツ</li>
-          <li>コンテンツ</li>
-        </ul>
-        <ul>
-          <li>コンテンツ</li>
-          <li>コンテンツ</li>
-          <li>コンテンツ</li>
+          <li>
+            <instagram-embed 
+              :url="'https://www.instagram.com/p/BbZRtZiFcBf/'"
+              :hide-caption="true"
+            />
+          </li>
+          <li>
+            <instagram-embed 
+              :url="'https://www.instagram.com/p/BvDoxraAXSd/'"
+              :hide-caption="true"
+            />
+          </li>
         </ul>
       </div>
     </div>
@@ -142,7 +145,7 @@ export default {
 
 .home{
   margin: 98px auto;
-  width: 960px;
+  width: 1020px;
   > h1 {
     font-weight: 800;
     font-size: 2.5rem;
@@ -220,15 +223,12 @@ export default {
   }
   .blog {
     .blog-catalog {
-      display: flex;
       margin-bottom: 98px;
       ul {
+        display: flex;
         margin: 0 auto;
         li {
-          width: 150px;
-          height: 150px;
-          background: skyblue;
-          margin-bottom: 12px;
+          width: 350px;
         }
       }
     }
@@ -258,6 +258,12 @@ export default {
       font-size: 12px;
       letter-spacing: -0.8px;
     }
+  }
+  .Header {
+    display: none;
+      .AvatarContainer {
+        display: none;
+      }
   }
 }
 </style>
